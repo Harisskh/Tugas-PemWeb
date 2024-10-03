@@ -1,0 +1,39 @@
+<!-- index.html (Halaman Pendaftaran) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="JS/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <form action="detail.html" method="POST" onsubmit="return handleSubmit(event)">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" name="usia" required>
+            
+            <label for="pekerjaan">Pekerjaan:</label>
+            <select id="pekerjaan" name="pekerjaan" required>
+                <option value="">Pilih Pekerjaan</option>
+                <option value="pelajar">Pelajar/Mahasiswa</option>
+                <option value="karyawan">Karyawan</option>
+                <option value="wiraswasta">Wiraswasta</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+</body>
+</html>
